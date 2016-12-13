@@ -26,5 +26,9 @@ namespace Salon.Objects
     {
       return false;
     }
+    else
+    {
+      Stylist newStylist = (Stylist) otherStylist;
+    }
   }
 }
