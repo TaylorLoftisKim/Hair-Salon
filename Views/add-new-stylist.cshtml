@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+		<link rel="stylesheet" type="text/css" href="/Content/css/styles.css">
+		<title>Salon</title>
+	</head>
+	<body>
+		<div class="container">
+			<div class="jumbotron">
+				<h1>Add a New Stylist</h1>
+			</div>
+			<div class="jumbotron">
+				<form class="add-new-stylist" action="/added-stylist" method="post">
+					<div class="form-group">
+						<label for="new-stylist">Enter Stylists Name:</label>
+            <br>
+            <input type="text" name="new-stylist" id="new-stylist" placeholder="Insert Stylist Name">
+					</div>
+					<div class="form-group">
+						<label for="new-details">Stylist Details:</label>
+            <br>
+            <input type="text" name="new-details" id="new-details" placeholder="Hair styles? Working Hours?">
+					</div>
+					<div class="form-group">
+						<label for="new-client">Enter Clients Name:</label>
+            <br>
+            <input type="select" name="new-client" id="new-client" placeholder="Insert Client">
+					</div>
+          <button class="btn btn-info" type="submit" name="button">Enter</button>
+        </form>
+			</div>
+      <div class="jumbotron">
+        <form class="add-new-stylist" action="/" method="post">
+          <div class="form-group">
+            <button class="btn btn-success" type="submit" name="button">Return Home</button>
+          </div>
+        </form>
+      </div>
+		</div>
+	</body>
+</html>
